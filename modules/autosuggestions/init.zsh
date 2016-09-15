@@ -11,6 +11,9 @@ pmodload 'editor'
 # Source module files.
 source "${0:h}/external/zsh-autosuggestions.zsh" || return 1
 
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=reset-prompt
+ZSH_AUTOSUGGEST_PARTIAL_ACCEPT_WIDGETS+=(editor-info)
+
 #
 # Highlighting
 #
